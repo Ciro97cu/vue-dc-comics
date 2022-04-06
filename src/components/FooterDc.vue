@@ -96,6 +96,36 @@
         </div>
       </div>
     </div>
+
+    <div class="footer_socials">
+      <div class="container">
+        <div class="row py-5 align-items-center justify-content-between">
+          <div class="col-auto">
+            <a class="sign_up_footer" href="#">SIGN-UP NOW</a>
+          </div>
+          <div class="col-auto">
+            <div class="row align-items-center">
+              <div class="col-auto follow_footer">FOLLOW US</div>
+              <div class="col-auto">
+                <img src="../assets/footer-facebook.png" alt="facebook" />
+              </div>
+              <div class="col-auto">
+                <img src="../assets/footer-twitter.png" alt="twitter" />
+              </div>
+              <div class="col-auto">
+                <img src="../assets/footer-youtube.png" alt="youtube" />
+              </div>
+              <div class="col-auto">
+                <img src="../assets/footer-pinterest.png" alt="pinterest" />
+              </div>
+              <div class="col-auto">
+                <img src="../assets/footer-periscope.png" alt="periscope" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -139,5 +169,21 @@ export default {
   background-image: url(../assets/dc-logo-bg.png);
   background-size: cover;
   background-position: center;
+}
+
+.footer_socials {
+  background-color: $background-color-dark-grey;
+}
+
+.sign_up_footer {
+  color: $text-color-white;
+  padding: 10px;
+  border: 2px solid $background-color-blue;
+}
+
+.follow_footer {
+  font-size: 20px;
+  font-weight: 600;
+  color: $background-color-blue;
 }
 </style>

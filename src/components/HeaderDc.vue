@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container py-4">
+    <div class="container py-3">
       <div class="row align-items-center">
         <div class="col-sm-4">
           <div class="logo_wrapper">
