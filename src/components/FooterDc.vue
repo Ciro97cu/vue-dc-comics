@@ -87,12 +87,12 @@
         </div>
       </div>
     </div>
+
     <div class="jumbo_footer">
       <div class="container">
-        <div class="row bg_logo_footer">
-          <div class="col-sm-12"></div>
-
-          <img src="../assets/dc-logo-bg.png" alt="" />
+        <div class="row container_logo_dc">
+          <div class="col-sm-7">ciao</div>
+          <div class="col-sm-5 logo_dc_bg"></div>
         </div>
       </div>
     </div>
@@ -131,12 +131,13 @@ export default {
   background-repeat: repeat-x;
 }
 
-.bg_logo_footer {
-  position: relative;
-  img {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+.container_logo_dc {
+  height: 482px;
+}
+
+.logo_dc_bg {
+  background-image: url(../assets/dc-logo-bg.png);
+  background-size: cover;
+  background-position: center;
 }
 </style>
