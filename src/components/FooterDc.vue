@@ -89,11 +89,10 @@
     </div>
     <div class="jumbo_footer">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-7"></div>
-          <div class="col-sm-5">
-            <img src="../assets/dc-logo-bg.png" alt="" />
-          </div>
+        <div class="row bg_logo_footer">
+          <div class="col-sm-12"></div>
+
+          <img src="../assets/dc-logo-bg.png" alt="" />
         </div>
       </div>
     </div>
@@ -129,12 +128,15 @@ export default {
 }
 .jumbo_footer {
   background-image: url(../assets/footer-bg.jpg);
-  height: 482px;
-  .col-sm-5 {
-    height: 482px;
-    img {
-      height: 100%;
-    }
+  background-repeat: repeat-x;
+}
+
+.bg_logo_footer {
+  position: relative;
+  img {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 </style>
