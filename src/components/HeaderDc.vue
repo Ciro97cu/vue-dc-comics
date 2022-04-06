@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container py-3">
-      <div class="row align-items-center">
+      <div class="row">
         <div class="col-sm-4">
           <div class="logo_wrapper">
             <img src="../assets/dc-logo.png" alt="logo-dc" />
@@ -9,9 +9,11 @@
         </div>
         <div class="col-sm-8">
           <ul class="row justify-content-between">
-            <a v-for="item in listItem" :key="item" class="col-auto" href="#">
-              <li>{{ item }}</li>
-            </a>
+            <li v-for="item in listItem" :key="item" class="col-auto">
+              <a href="#">
+                {{ item }}
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -45,9 +47,17 @@ export default {
 <style scoped lang="scss">
 @import "../variables";
 ul {
+  padding-top: 39.5px;
   a {
     font-size: 13px;
+    font-weight: 700;
     color: $text-color-dark;
+    padding-bottom: 54px;
+    transition: all 0.25s linear;
+    &:hover {
+      color: $background-color-blue;
+      border-bottom: 5px solid $background-color-blue;
+    }
   }
 }
 </style>
