@@ -1,6 +1,90 @@
 <template>
   <footer>
-    <h1>ciaooooooooooooo</h1>
+    <div class="container">
+      <div class="row py-5 justify-content-between">
+        <div
+          class="
+            col-auto
+            d-flex
+            flex-direction-row
+            align-items-center
+            container_footer_images
+          "
+        >
+          <div class="wrapper_footer_images">
+            <img src="../assets/buy-comics-digital-comics.png" alt="" />
+          </div>
+          DIGITAL COMICS
+        </div>
+        <div
+          class="
+            col-auto
+            d-flex
+            flex-direction-row
+            align-items-center
+            container_footer_images
+          "
+        >
+          <div class="wrapper_footer_images">
+            <img src="../assets/buy-comics-merchandise.png" alt="" />
+          </div>
+          DIGITAL COMICS
+        </div>
+        <div
+          class="
+            col-auto
+            d-flex
+            flex-direction-row
+            align-items-center
+            container_footer_images
+          "
+        >
+          <div class="wrapper_footer_images">
+            <img src="../assets/buy-comics-subscriptions.png" alt="" />
+          </div>
+          DIGITAL COMICS
+        </div>
+        <div
+          class="
+            col-auto
+            d-flex
+            flex-direction-row
+            align-items-center
+            container_footer_images
+          "
+        >
+          <div class="wrapper_footer_images">
+            <img src="../assets/buy-comics-shop-locator.png" alt="" />
+          </div>
+          DIGITAL COMICS
+        </div>
+        <div
+          class="
+            col-auto
+            d-flex
+            flex-direction-row
+            align-items-center
+            container_footer_images
+          "
+        >
+          <div
+            class="
+              wrapper_footer_images
+              d-flex
+              flex-direction-row
+              align-items-center
+            "
+          >
+            <img
+              class="special_image"
+              src="../assets/buy-dc-power-visa.svg"
+              alt=""
+            />
+          </div>
+          DIGITAL COMICS
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -12,4 +96,23 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../variables";
+
+footer {
+  background-color: $background-color-blue;
+}
+
+.container_footer_images {
+  color: $text-color-white;
+  column-gap: 10px;
+}
+.wrapper_footer_images {
+  height: 50px;
+  img {
+    height: 100%;
+  }
+  .special_image {
+    height: 65%;
+  }
+}
 </style>

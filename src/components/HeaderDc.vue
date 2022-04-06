@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="col-sm-8">
-          <ul class="row">
+          <ul class="row justify-content-between">
             <a class="col-auto" href="#">
               <li>CHARACTERS</li>
             </a>
