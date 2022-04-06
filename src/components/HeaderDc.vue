@@ -9,35 +9,8 @@
         </div>
         <div class="col-sm-8">
           <ul class="row justify-content-between">
-            <a class="col-auto" href="#">
-              <li>CHARACTERS</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>COMICS</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>MOVIES</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>TV</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>GAMES</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>COLLECTIBLES</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>VIDEOS</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>FANS</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>NEWS</li>
-            </a>
-            <a class="col-auto" href="#">
-              <li>SHOP</li>
+            <a v-for="item in listItem" :key="item" class="col-auto" href="#">
+              <li>{{ item }}</li>
             </a>
           </ul>
         </div>
@@ -49,6 +22,22 @@
 <script>
 export default {
   name: "HeaderDc",
+  data() {
+    return {
+      listItem: [
+        "CHARACTERS",
+        "COMICS",
+        "MOVIES",
+        "TV",
+        "GAMES",
+        "COLLECTIBLES",
+        "VIDEOS",
+        "FANS",
+        "NEWS",
+        "SHOP",
+      ],
+    };
+  },
 };
 </script>
 
