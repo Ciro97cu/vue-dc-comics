@@ -2,7 +2,7 @@
   <footer>
     <div class="container_bg_blue">
       <div class="container">
-        <div class="row py-5 justify-content-between">
+        <div class="row py-5 justify-content-around">
           <div
             class="
               col-auto
@@ -91,7 +91,51 @@
     <div class="jumbo_footer">
       <div class="container">
         <div class="row container_logo_dc">
-          <div class="col-sm-7">ciao</div>
+          <div class="col-sm-7 container_footer_list d-flex flex-row">
+            <div class="d-flex flex-column pt-5 pe-5">
+              <h3>DC COMICS</h3>
+              <ul>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Comics</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+              <h3 class="pt-4">SHOP</h3>
+              <ul>
+                <li><a href="#">Shop DC</a></li>
+                <li><a href="#">Shop DC Collectibles</a></li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column pt-5 pe-5">
+              <h3>DC</h3>
+              <ul>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy policy (New)</a></li>
+                <li><a href="#">Ad Choices</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Subscriptions</a></li>
+                <li><a href="#">Talent WorkShops</a></li>
+                <li><a href="#">CPSC Certificates</a></li>
+                <li><a href="#">Ratings</a></li>
+                <li><a href="#">Shop Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column pt-5">
+              <h3>SITES</h3>
+              <ul>
+                <li><a href="#">DC</a></li>
+                <li><a href="#">MAD Magazine</a></li>
+                <li><a href="#">DC Kids</a></li>
+                <li><a href="#">DC Universe</a></li>
+                <li><a href="#">DC Power Visa</a></li>
+              </ul>
+            </div>
+          </div>
           <div class="col-sm-5 logo_dc_bg"></div>
         </div>
       </div>
@@ -159,6 +203,18 @@ export default {
 .jumbo_footer {
   background-image: url(../assets/footer-bg.jpg);
   background-repeat: repeat-x;
+}
+
+.container_footer_list {
+  h3 {
+    color: $text-color-white;
+  }
+  a {
+    color: $text-color-grey;
+    &:hover {
+      color: $text-color-white;
+    }
+  }
 }
 
 .container_logo_dc {
