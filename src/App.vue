@@ -2,6 +2,7 @@
   <div id="app">
     <HeaderDc />
     <MainDc />
+    <ProductsDc />
     <FooterDc />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import HeaderDc from "./components/HeaderDc.vue";
 import MainDc from "./components/MainDc.vue";
+import ProductsDc from "./components/ProductsDc.vue";
 import FooterDc from "./components/FooterDc.vue";
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     HeaderDc,
     MainDc,
+    ProductsDc,
     FooterDc,
   },
 };

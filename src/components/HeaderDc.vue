@@ -48,12 +48,14 @@ export default {
 @import "@/assets/style/variables";
 ul {
   padding-top: 39.5px;
+
   a {
     font-size: 13px;
     font-weight: 700;
     color: $text-color-dark;
     padding-bottom: 54px;
     transition: all 0.25s linear;
+
     &:hover {
       color: $background-color-blue;
       border-bottom: 5px solid $background-color-blue;
