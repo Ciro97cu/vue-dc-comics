@@ -4,12 +4,12 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="logo_wrapper">
-            <img src="../assets/dc-logo.png" alt="logo-dc" />
+            <img src="@/assets/img/dc-logo.png" alt="logo-dc" />
           </div>
         </div>
         <div class="col-sm-8">
           <ul class="row justify-content-between">
-            <li v-for="item in listItem" :key="item" class="col-auto">
+            <li v-for="item in navLink" :key="item" class="col-auto">
               <a href="#">
                 {{ item }}
               </a>
@@ -24,28 +24,15 @@
 <script>
 export default {
   name: "HeaderDc",
-  data() {
-    return {
-      listItem: [
-        "CHARACTERS",
-        "COMICS",
-        "MOVIES",
-        "TV",
-        "GAMES",
-        "COLLECTIBLES",
-        "VIDEOS",
-        "FANS",
-        "NEWS",
-        "SHOP",
-      ],
-    };
+  props: {
+    navLink: Array,
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "../variables";
+@import "@/assets/style/variables";
 ul {
   padding-top: 39.5px;
   a {

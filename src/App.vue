@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderDc />
+    <HeaderDc :navLink="navLink" />
     <MainDc />
     <FooterDc />
   </div>
@@ -13,6 +13,22 @@ import FooterDc from "./components/FooterDc.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      navLink: [
+        "CHARACTERS",
+        "COMICS",
+        "MOVIES",
+        "TV",
+        "GAMES",
+        "COLLECTIBLES",
+        "VIDEOS",
+        "FANS",
+        "NEWS",
+        "SHOP",
+      ],
+    };
+  },
   components: {
     HeaderDc,
     MainDc,
@@ -22,33 +38,7 @@ export default {
 </script>
 
 <style lang="scss">
-// reset
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
+@import "@/assets/style/resets";
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

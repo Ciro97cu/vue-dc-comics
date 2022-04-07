@@ -14,7 +14,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "../variables";
+@import "@/assets/style/variables";
 main {
   background-color: $background-color-dark;
   h1 {

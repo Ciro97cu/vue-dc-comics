@@ -13,7 +13,7 @@
             "
           >
             <div class="wrapper_footer_images">
-              <img src="../assets/buy-comics-digital-comics.png" alt="" />
+              <img src="@/assets/img/buy-comics-digital-comics.png" alt="" />
             </div>
             DIGITAL COMICS
           </div>
@@ -27,7 +27,7 @@
             "
           >
             <div class="wrapper_footer_images">
-              <img src="../assets/buy-comics-merchandise.png" alt="" />
+              <img src="@/assets/img/buy-comics-merchandise.png" alt="" />
             </div>
             DIGITAL COMICS
           </div>
@@ -41,7 +41,7 @@
             "
           >
             <div class="wrapper_footer_images">
-              <img src="../assets/buy-comics-subscriptions.png" alt="" />
+              <img src="@/assets/img/buy-comics-subscriptions.png" alt="" />
             </div>
             DIGITAL COMICS
           </div>
@@ -55,7 +55,7 @@
             "
           >
             <div class="wrapper_footer_images">
-              <img src="../assets/buy-comics-shop-locator.png" alt="" />
+              <img src="@/assets/img/buy-comics-shop-locator.png" alt="" />
             </div>
             DIGITAL COMICS
           </div>
@@ -78,7 +78,7 @@
             >
               <img
                 class="special_image"
-                src="../assets/buy-dc-power-visa.svg"
+                src="@/assets/img/buy-dc-power-visa.svg"
                 alt=""
               />
             </div>
@@ -151,19 +151,19 @@
             <div class="row align-items-center">
               <div class="col-auto follow_footer">FOLLOW US</div>
               <div class="col-auto">
-                <img src="../assets/footer-facebook.png" alt="facebook" />
+                <img src="@/assets/img/footer-facebook.png" alt="facebook" />
               </div>
               <div class="col-auto">
-                <img src="../assets/footer-twitter.png" alt="twitter" />
+                <img src="@/assets/img/footer-twitter.png" alt="twitter" />
               </div>
               <div class="col-auto">
-                <img src="../assets/footer-youtube.png" alt="youtube" />
+                <img src="@/assets/img/footer-youtube.png" alt="youtube" />
               </div>
               <div class="col-auto">
-                <img src="../assets/footer-pinterest.png" alt="pinterest" />
+                <img src="@/assets/img/footer-pinterest.png" alt="pinterest" />
               </div>
               <div class="col-auto">
-                <img src="../assets/footer-periscope.png" alt="periscope" />
+                <img src="@/assets/img/footer-periscope.png" alt="periscope" />
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "../variables";
+@import "@/assets/style/variables";
 
 .container_bg_blue {
   background-color: $background-color-blue;
@@ -201,7 +201,7 @@ export default {
   }
 }
 .jumbo_footer {
-  background-image: url(../assets/footer-bg.jpg);
+  background-image: url(@/assets/img/footer-bg.jpg);
   background-repeat: repeat-x;
 }
 
@@ -222,7 +222,7 @@ export default {
 }
 
 .logo_dc_bg {
-  background-image: url(../assets/dc-logo-bg.png);
+  background-image: url(@/assets/img/dc-logo-bg.png);
   background-size: cover;
   background-position: center;
 }
