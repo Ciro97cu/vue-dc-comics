@@ -24,8 +24,21 @@
 <script>
 export default {
   name: "HeaderDc",
-  props: {
-    navLink: Array,
+  data() {
+    return {
+      navLink: [
+        "CHARACTERS",
+        "COMICS",
+        "MOVIES",
+        "TV",
+        "GAMES",
+        "COLLECTIBLES",
+        "VIDEOS",
+        "FANS",
+        "NEWS",
+        "SHOP",
+      ],
+    };
   },
 };
 </script>

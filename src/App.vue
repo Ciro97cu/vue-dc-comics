@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderDc :navLink="navLink" />
+    <HeaderDc />
     <MainDc />
     <FooterDc />
   </div>
@@ -13,22 +13,6 @@ import FooterDc from "./components/FooterDc.vue";
 
 export default {
   name: "App",
-  data() {
-    return {
-      navLink: [
-        "CHARACTERS",
-        "COMICS",
-        "MOVIES",
-        "TV",
-        "GAMES",
-        "COLLECTIBLES",
-        "VIDEOS",
-        "FANS",
-        "NEWS",
-        "SHOP",
-      ],
-    };
-  },
   components: {
     HeaderDc,
     MainDc,
@@ -42,7 +26,5 @@ export default {
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 </style>

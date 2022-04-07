@@ -4,12 +4,11 @@
     <div class="container_cards py-5">
       <div class="container-sm">
         <div class="row">
-          <div class="cards col-sm-2">
-            <div class="card">
-              <img src="@/assets/img/jumbotron.jpg" alt="" />
-              <p>ACTION COMICS</p>
-            </div>
-          </div>
+          <CardDc
+            v-for="(item, index) in card"
+            :key="index"
+            :singleCard="item"
+          />
         </div>
       </div>
     </div>
@@ -17,12 +16,18 @@
 </template>
 
 <script>
-// import CardItem from "@/components/CardItem.vue";
+import card from "@/assets/data/card";
+import CardDc from "@/components/CardDc.vue";
 export default {
   name: "MainDc",
-  // components: {
-  //   CardItem,
-  // },
+  data() {
+    return {
+      card,
+    };
+  },
+  components: {
+    CardDc,
+  },
 };
 </script>
 
@@ -38,11 +43,6 @@ main {
   }
   .container_cards {
     background-color: $background-color-dark;
-    .cards {
-      img {
-        width: 100%;
-      }
-    }
   }
 }
 </style>
