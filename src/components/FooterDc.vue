@@ -124,17 +124,17 @@ export default {
 
 .footer_socials {
   background-color: $background-color-dark-grey;
-}
 
-.sign_up_footer {
-  color: $text-color-white;
-  padding: 10px;
-  border: 2px solid $background-color-blue;
-}
+  .sign_up_footer {
+    color: $text-color-white;
+    padding: 10px;
+    border: 2px solid $background-color-blue;
+  }
 
-.follow_footer {
-  font-size: 20px;
-  font-weight: 600;
-  color: $background-color-blue;
+  .follow_footer {
+    font-size: 20px;
+    font-weight: 600;
+    color: $background-color-blue;
+  }
 }
 </style>

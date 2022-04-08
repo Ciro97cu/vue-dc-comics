@@ -3,7 +3,7 @@
     <div class="jumbotron">
       <div class="tag_series">CURRENT SERIES</div>
     </div>
-    <div class="container_cards py-5">
+    <div class="container_cards py-4">
       <div class="container-sm">
         <div class="row">
           <CardDc
@@ -67,6 +67,7 @@ export default {
     font-weight: 600;
     background-color: $background-color-blue;
     padding: 10px 70px;
+    cursor: pointer;
   }
 }
 </style>
